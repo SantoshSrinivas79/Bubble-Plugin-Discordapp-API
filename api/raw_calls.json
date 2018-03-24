@@ -1,0 +1,62 @@
+{
+    "add_to_header": true,
+    "auth": "oauth2_user",
+    "authentication_url": "https://discordapp.com/api/oauth2/authorize",
+    "calls": {
+        "AAC": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get Discord Profile",
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1521908672967x232027374982791170.plugin_api.AAC",
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"Get Discord Profile\",\"fields\":{\"_p_username\":{\"ret_value\":\"text\",\"caption\":\"username\",\"path\":[\"username\"]},\"_p_verified\":{\"ret_value\":\"boolean\",\"caption\":\"verified\",\"path\":[\"verified\"]},\"_p_mfa_enabled\":{\"ret_value\":\"boolean\",\"caption\":\"mfa_enabled\",\"path\":[\"mfa_enabled\"]},\"_p_id\":{\"ret_value\":\"number\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_avatar\":{\"ret_value\":\"text\",\"caption\":\"avatar\",\"path\":[\"avatar\"]},\"_p_discriminator\":{\"ret_value\":\"number\",\"caption\":\"discriminator\",\"path\":[\"discriminator\"]},\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"path\":[\"email\"]}}}}",
+            "url": "https://discordapp.com/api/users/@me"
+        },
+        "AAE": {
+            "doc_link": "",
+            "method": "get",
+            "name": "Get Guild Channels",
+            "publish_as": "data",
+            "rank": 1,
+            "url": "https://discordapp.com/api/guilds/[guild.id]/channels",
+            "url_params": {
+                "AAF": {
+                    "key": "guild.id",
+                    "private": true,
+                    "value": "361260253439983629",
+                    "visibility": "public"
+                }
+            }
+        },
+        "AAG": {
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "Get My Guilds",
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1521908672967x232027374982791170.plugin_api.AAG",
+            "types": "{\"plugin_api.AAG\":{\"caption\":\"Get My Guild\",\"fields\":{\"_p_owner\":{\"ret_value\":\"boolean\",\"caption\":\"owner\",\"path\":[\"owner\"]},\"_p_permissions\":{\"ret_value\":\"number\",\"caption\":\"permissions\",\"path\":[\"permissions\"]},\"_p_icon\":{\"ret_value\":\"text\",\"caption\":\"icon\",\"path\":[\"icon\"]},\"_p_id\":{\"ret_value\":\"number\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"path\":[\"name\"]}}}}",
+            "url": "https://discordapp.com/api/users/@me/guilds"
+        },
+        "AAH": {
+            "method": "get",
+            "name": "Get Invite",
+            "publish_as": "data",
+            "rank": 3,
+            "url": "https://discordapp.com/api/v6/invites/[invite.code]",
+            "url_params": {
+                "AAI": {
+                    "key": "invite.code",
+                    "private": true,
+                    "value": "SUJAPJ5"
+                }
+            }
+        }
+    },
+    "generate_token_from_code_uri": "https://discordapp.com/api/oauth2/token",
+    "human": "Discordapp",
+    "oauth_user_data_call": "https://discordapp.com/api/users/@me",
+    "scope": "email identify guilds"
+}
