@@ -1,4 +1,5 @@
 {
+    "add_basic_authentication": true,
     "add_to_header": true,
     "auth": "oauth2_user",
     "authentication_url": "https://discordapp.com/api/oauth2/authorize",
@@ -15,21 +16,22 @@
         },
         "AAE": {
             "doc_link": "",
+            "initialized": true,
             "method": "get",
             "name": "Get Guild Channels",
             "publish_as": "data",
             "rank": 1,
-            "url": "https://discordapp.com/api/guilds/[guild.id]/channels",
+            "url": "https://discordapp.com/api/[id]/channels",
             "url_params": {
-                "AAF": {
-                    "key": "guild.id",
+                "AAU": {
+                    "key": "id",
                     "private": true,
-                    "value": "361260253439983629",
-                    "visibility": "public"
+                    "value": ""
                 }
             }
         },
         "AAG": {
+            "get_headers": false,
             "initialized": true,
             "is_list": true,
             "method": "get",
