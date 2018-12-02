@@ -21,9 +21,9 @@
             "name": "Get Guild Channels",
             "publish_as": "data",
             "rank": 1,
-            "url": "https://discordapp.com/api/[id]/channels",
+            "url": "https://discordapp.com/api/guilds/[id]/",
             "url_params": {
-                "AAU": {
+                "AAk": {
                     "key": "id",
                     "private": true,
                     "value": ""
